@@ -37,6 +37,12 @@ client.on('message', msg => {
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
+    
+    else if (msg.content === 'Nono') {
+      msg.channel.send('est amoureux !');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
      
 });
 
