@@ -24,7 +24,7 @@ client.on('ready', () => {
 // création d'une commande (message, reponse)
 
 client.on('message', msg => {
-  if (msg.content === 'Mikado') {
+  if (msg.content === 'Mikado le plus bg') {
     msg.reply('Moi même \n *(msg auto)* ');
   }
 
