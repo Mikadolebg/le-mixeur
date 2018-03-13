@@ -25,7 +25,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === 'Mikado') {
-    msg.channel.send('Moi même \n *(msg auto)* ');
+    msg.reply('Moi même \n *(msg auto)* ');
   }
 
     
