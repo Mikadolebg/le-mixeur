@@ -38,18 +38,7 @@ client.on('message', msg => {
       client.setMaxListeners(1);
     }
     
-    else if (msg.content === 'Nono') {
-      msg.channel.send('est amoureux !');
-      client.setMaxListeners(1);
-      client.setMaxListeners(1);
-    }
-    
-    else if (msg.content === 'Nana') {
-      msg.channel.send('est amoureuse !');
-      client.setMaxListeners(1);
-      client.setMaxListeners(1);
-    }
-     
+   
     else if (msg.content === 'Nono est amoureux') {
       msg.channel.send('On a compris !');
       client.setMaxListeners(1);
