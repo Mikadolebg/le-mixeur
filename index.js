@@ -111,7 +111,7 @@ client.on('message', msg => {
     }
     
     else if (msg.content === 'helpyr') {
-      msg.channel.send('---------------------- \n1=Rythm \n2=Ayana \n3=Koya \n -------- \n \nyr=play your reality \nl=leave \nj=join');
+      msg.channel.send('---------------------- \n1=Rythm \n2=Ayana \n3=Koya \n---------------------- \n \nyr=play your reality \nl=leave \nj=join');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
