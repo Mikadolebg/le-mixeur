@@ -38,6 +38,66 @@ client.on('message', msg => {
       client.setMaxListeners(1);
     }
     
+    else if (msg.content === 'yr1') {
+      msg.channel.send('!p your reality');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
+    else if (msg.content === 'yr2') {
+      msg.channel.send('^^play your reality');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
+    else if (msg.content === 'yr3') {
+      msg.channel.send('=play your reality');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
+    else if (msg.content === 'l1') {
+      msg.channel.send('!leave');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
+    else if (msg.content === 'l2') {
+      msg.channel.send('=leave');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
+    else if (msg.content === 'l3') {
+      msg.channel.send('^^leave');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
+    else if (msg.content === 'j1') {
+      msg.channel.send('!join');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
+    else if (msg.content === 'j2') {
+      msg.channel.send('=join');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
+    else if (msg.content === 'j3') {
+      msg.channel.send('^^join');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
+    else if (msg.content === 'helpyr') {
+      msg.channel.send('1=Rythm \n2=Ayana \n3=Koya \n \nyr=play your reality \nl=leave \nj=join);
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
 });
 
 // client secret
