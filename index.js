@@ -55,6 +55,12 @@ client.on('message', msg => {
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
+   
+    else if (msg.content === 'yr4') {
+      msg.channel.send('!!!play your reality');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
     
     else if (msg.content === 'l1') {
       msg.channel.send('!leave');
@@ -70,6 +76,12 @@ client.on('message', msg => {
     
     else if (msg.content === 'l3') {
       msg.channel.send('^^leave');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
+    else if (msg.content === 'l4') {
+      msg.channel.send('!!!leave');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
@@ -92,6 +104,13 @@ client.on('message', msg => {
       client.setMaxListeners(1);
     }
     
+    
+    else if (msg.content === 'j4') {
+      msg.channel.send('!!!join');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
     else if (msg.content === 's1') {
       msg.channel.send('!skip');
       client.setMaxListeners(1);
@@ -103,15 +122,21 @@ client.on('message', msg => {
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
-    
+   
     else if (msg.content === 's3') {
       msg.channel.send('^^skip');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
+    else if (msg.content === 's4') {
+      msg.channel.send('!!!skip');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
     else if (msg.content === 'helpyr') {
-      msg.channel.send('---------------------- \n1=Rythm \n2=Ayana \n3=Koya \n---------------------- \n \nyr=play your reality \nl=leave \nj=join \ns=skip');
+      msg.channel.send('---------------------- \n1=Rythm \n2=Ayana \n3=Koya \n4=DabBot \n---------------------- \n \nyr=play your reality \nl=leave \nj=join \ns=skip \n----------------------');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
