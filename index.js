@@ -92,8 +92,26 @@ client.on('message', msg => {
       client.setMaxListeners(1);
     }
     
+    else if (msg.content === 's1') {
+      msg.channel.send('!skip');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
+    else if (msg.content === 's2') {
+      msg.channel.send('=skip');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
+    else if (msg.content === 's3') {
+      msg.channel.send('^^skip');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
     else if (msg.content === 'helpyr') {
-      msg.channel.send('1=Rythm \n2=Ayana \n3=Koya \n \nyr=play your reality \nl=leave \nj=join');
+      msg.channel.send('---------------------- \n1=Rythm \n2=Ayana \n3=Koya \n -------- \n \nyr=play your reality \nl=leave \nj=join');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
