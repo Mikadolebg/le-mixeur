@@ -141,7 +141,7 @@ client.on('message', msg => {
       client.setMaxListeners(1);
     }
   
-    else if (msg.content === 'patato cycle') {
+    else if (msg.content === 'patatoes cycle') {
       msg.channel.send(':woman: :ear_of_rice: :point_right: :potato: :point_right: :fries: :point_right: :poop:');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
