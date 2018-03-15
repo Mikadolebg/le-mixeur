@@ -25,7 +25,7 @@ client.on('ready', () => {
 //342376615566770178
 client.on('message', msg => {
   if (msg.content === 'Mikado') {
-  if (msg.author.id !== '301913733536415755') return;
+  if (msg.author.id !== '301913733536415755')
   if (msg.author.id !== '342376615566770178') return;
     msg.reply('Moi même \n *(msg auto)* ');
   }
