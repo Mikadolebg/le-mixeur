@@ -1,4 +1,4 @@
-// on off
+/ on off
 // var
 const restify = require("restify");
 var server = restify.createServer();
