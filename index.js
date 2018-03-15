@@ -1,4 +1,4 @@
-/ on off
+// on off
 // var
 const restify = require("restify");
 var server = restify.createServer();
@@ -136,6 +136,7 @@ client.on('message', msg => {
     }
     
     else if (msg.content === 'helpmik') {
+      if (msg.author.id !== '301913733536415755') return;
       msg.channel.send('------------------------------------------------------- \n__**Bot:**__ \n1=Rythm \n2=Ayana \n3=Koya \n4=DabBot \n------------------------------------------------------- \n__**Commandes Bot:**__ \nl=leave \nj=join \ns=skip \n------------------------------------------------------- \n__**Raccourcis Play:**__ \nrnm=piano cover of "For The Damaged - Coda" \n-------------------------------------------------------');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
