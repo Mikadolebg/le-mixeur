@@ -38,26 +38,26 @@ client.on('message', msg => {
       client.setMaxListeners(1);
     }
     
-    else if (msg.content === 'yr1') {
-      msg.channel.send('!p your reality');
+    else if (msg.content === 'rnm1') {
+      msg.channel.send('!p https://youtu.be/wbY97-hdD5c');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
-    else if (msg.content === 'yr2') {
-      msg.channel.send('=play your reality');
+    else if (msg.content === 'rnm2') {
+      msg.channel.send('=play https://youtu.be/wbY97-hdD5c');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
-    else if (msg.content === 'yr3') {
-      msg.channel.send('^^play your reality');
+    else if (msg.content === 'rnm3') {
+      msg.channel.send('^^play https://youtu.be/wbY97-hdD5c');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
    
-    else if (msg.content === 'yr4') {
-      msg.channel.send('!!!play your reality');
+    else if (msg.content === 'rnm4') {
+      msg.channel.send('!!!play https://youtu.be/wbY97-hdD5c');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
@@ -136,7 +136,7 @@ client.on('message', msg => {
     }
     
     else if (msg.content === 'helpyr') {
-      msg.channel.send('---------------------- \n1=Rythm \n2=Ayana \n3=Koya \n4=DabBot \n---------------------- \n \nyr=play your reality \nl=leave \nj=join \ns=skip \n----------------------');
+      msg.channel.send('---------------------- \n__**Bot:**-- \n1=Rythm \n2=Ayana \n3=Koya \n4=DabBot \n---------------------- \n__**Commandes Bot:**_\nl=leave \nj=join \ns=skip \n---------------------- \n__**Raccourcis Play:**__ \nrnm=piano cover of "For The Damaged - Coda"');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
