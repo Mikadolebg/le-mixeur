@@ -45,13 +45,13 @@ client.on('message', msg => {
     }
     
     else if (msg.content === 'yr2') {
-      msg.channel.send('^^play your reality');
+      msg.channel.send('=play your reality');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
     else if (msg.content === 'yr3') {
-      msg.channel.send('=play your reality');
+      msg.channel.send('^^play your reality');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
