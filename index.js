@@ -136,7 +136,7 @@ client.on('message', msg => {
     }
     
     else if (msg.content === 'helpmik') {
-      msg.channel.send('---------------------- \n__**Bot:**__ \n1=Rythm \n2=Ayana \n3=Koya \n4=DabBot \n---------------------- \n__**Commandes Bot:**_\nl=leave \nj=join \ns=skip \n---------------------- \n__**Raccourcis Play:**__ \nrnm=piano cover of "For The Damaged - Coda"');
+      msg.channel.send('------------------------------------------------ \n__**Bot:**__ \n1=Rythm \n2=Ayana \n3=Koya \n4=DabBot \n------------------------------------------------ \n__**Commandes Bot:**__ \nl=leave \nj=join \ns=skip \n------------------------------------------------ \n__**Raccourcis Play:**__ \nrnm=piano cover of "For The Damaged - Coda" \n------------------------------------------------');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
