@@ -35,15 +35,32 @@ client.on('message', msg => {
   }
 
     
-  // Création d'une commande (message, reponse)
   
+    //----------Commandes Fun
     
     else if (msg.content === 'Asu') {
-      if (msg.author.id !== '301913733536415755') return;
+      if (msg.author.id !== '301913733536415755')
+      if (msg.author.id !== '342376615566770178')
+      if (msg.author.id !== '337354503806517249')
+       return;
       msg.channel.send('Manges des NinjaCookies :cookie: !');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
+    
+    else if (msg.content === 'patatoes cycle') {
+      if (msg.author.id !== '301913733536415755')
+      if (msg.author.id !== '342376615566770178')
+      if (msg.author.id !== '337354503806517249')
+       return;
+      msg.channel.send(':woman: :ear_of_rice: :point_right: :potato: :point_right: :fries: :point_right: :poop:');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
+    
+    
+    //--------------Raccourcis--------------
     
     else if (msg.content === 'rnm1') {
       if (msg.author.id !== '301913733536415755') return;
@@ -161,13 +178,6 @@ client.on('message', msg => {
     else if (msg.content === 'helpmik') {
       if (msg.author.id !== '301913733536415755') return;
       msg.channel.send('------------------------------------------------------- \n__**Bot:**__ \n1=Rythm \n2=Ayana \n3=Koya \n4=DabBot \n------------------------------------------------------- \n__**Commandes Bot:**__ \nl=leave \nj=join \ns=skip \n------------------------------------------------------- \n__**Raccourcis Play:**__ \nrnm=piano cover of "For The Damaged - Coda" \n-------------------------------------------------------');
-      client.setMaxListeners(1);
-      client.setMaxListeners(1);
-    }
-  
-    else if (msg.content === 'patatoes cycle') {
-      if (msg.author.id !== '301913733536415755') return;
-      msg.channel.send(':woman: :ear_of_rice: :point_right: :potato: :point_right: :fries: :point_right: :poop:');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
