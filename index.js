@@ -22,11 +22,13 @@ client.on('ready', () => {
    client.setMaxListeners(1);
   });
 // création d'une commande (message, reponse)
+//Speculoos=423118623876448296
 //Mikado=301913733536415755
 // Asuiky=342376615566770178
 //Drixy=337354503806517249
 client.on('message', msg => {
   if (msg.content === 'Mikado') {
+  if (msg.author.id !== '423118623876448296')
   if (msg.author.id !== '301913733536415755')
   if (msg.author.id !== '342376615566770178')
   if (msg.author.id !== '337354503806517249')
@@ -39,6 +41,7 @@ client.on('message', msg => {
     //----------Commandes Fun
     
     else if (msg.content === 'Asu') {
+      if (msg.author.id !== '423118623876448296')
       if (msg.author.id !== '301913733536415755')
       if (msg.author.id !== '342376615566770178')
       if (msg.author.id !== '337354503806517249')
@@ -49,6 +52,7 @@ client.on('message', msg => {
     }
     
     else if (msg.content === 'patatoes cycle') {
+      if (msg.author.id !== '423118623876448296')
       if (msg.author.id !== '301913733536415755')
       if (msg.author.id !== '342376615566770178')
       if (msg.author.id !== '337354503806517249')
@@ -63,77 +67,99 @@ client.on('message', msg => {
     //--------------Raccourcis--------------
     
     else if (msg.content === 'rnm1') {
-      if (msg.author.id !== '301913733536415755') return;
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+          return;
       msg.channel.send('!p https://youtu.be/wbY97-hdD5c');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
     else if (msg.content === 'rnm2') {
-      if (msg.author.id !== '301913733536415755') return;
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+          return;
       msg.channel.send('=play https://youtu.be/wbY97-hdD5c');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
     else if (msg.content === 'rnm3') {
-      if (msg.author.id !== '301913733536415755') return;
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+           return;
       msg.channel.send('^^play https://youtu.be/wbY97-hdD5c');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
    
     else if (msg.content === 'rnm4') {
-      if (msg.author.id !== '301913733536415755') return;
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755')
+          return;
       msg.channel.send('!!!play https://youtu.be/wbY97-hdD5c');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
     else if (msg.content === 'l1') {
-      if (msg.author.id !== '301913733536415755') return;
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+          return;
       msg.channel.send('!leave');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
     else if (msg.content === 'l2') {
-      if (msg.author.id !== '301913733536415755') return;
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+          return;
       msg.channel.send('=leave');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
     else if (msg.content === 'l3') {
-      if (msg.author.id !== '301913733536415755') return;
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+          return;
       msg.channel.send('^^leave');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
     else if (msg.content === 'l4') {
-      if (msg.author.id !== '301913733536415755') return;
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+          return;
       msg.channel.send('!!!leave');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
     else if (msg.content === 'j1') {
-      if (msg.author.id !== '301913733536415755') return;
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+          return;
       msg.channel.send('!join');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
     else if (msg.content === 'j2') {
-      if (msg.author.id !== '301913733536415755') return;
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+          return;
       msg.channel.send('=join');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
     else if (msg.content === 'j3') {
-      if (msg.author.id !== '301913733536415755') return;
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+          return;
       msg.channel.send('^^join');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
@@ -141,42 +167,54 @@ client.on('message', msg => {
     
     
     else if (msg.content === 'j4') {
-      if (msg.author.id !== '301913733536415755') return;
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+          return;
       msg.channel.send('!!!join');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
     else if (msg.content === 's1') {
-      if (msg.author.id !== '301913733536415755') return;
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+          return;
       msg.channel.send('!skip');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
     else if (msg.content === 's2') {
-      if (msg.author.id !== '301913733536415755') return;
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+          return;
       msg.channel.send('=skip');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
    
     else if (msg.content === 's3') {
-      if (msg.author.id !== '301913733536415755') return;
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+          return;
       msg.channel.send('^^skip');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
     else if (msg.content === 's4') {
-      if (msg.author.id !== '301913733536415755') return;
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+          return;
       msg.channel.send('!!!skip');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
     
     else if (msg.content === 'helpmik') {
-      if (msg.author.id !== '301913733536415755') return;
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+          return;
       msg.channel.send('------------------------------------------------------- \n__**Bot:**__ \n1=Rythm \n2=Ayana \n3=Koya \n4=DabBot \n------------------------------------------------------- \n__**Commandes Bot:**__ \nl=leave \nj=join \ns=skip \n------------------------------------------------------- \n__**Raccourcis Play:**__ \nrnm=piano cover of "For The Damaged - Coda" \n-------------------------------------------------------');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
