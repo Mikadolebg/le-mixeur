@@ -64,9 +64,9 @@ client.on('message', msg => {
     
     
     
-    //--------------Raccourcis--------------
+    //--------------Raccourcis Music--------------
     
-    else if (msg.content === 'rnm1') {
+    else if (msg.content === 'RNM1') {
       if (msg.author.id !== '423118623876448296')
       if (msg.author.id !== '301913733536415755') 
           return;
@@ -75,7 +75,7 @@ client.on('message', msg => {
       client.setMaxListeners(1);
     }
     
-    else if (msg.content === 'rnm2') {
+    else if (msg.content === 'RNM2') {
       if (msg.author.id !== '423118623876448296')
       if (msg.author.id !== '301913733536415755') 
           return;
@@ -84,7 +84,7 @@ client.on('message', msg => {
       client.setMaxListeners(1);
     }
     
-    else if (msg.content === 'rnm3') {
+    else if (msg.content === 'RNM3') {
       if (msg.author.id !== '423118623876448296')
       if (msg.author.id !== '301913733536415755') 
            return;
@@ -93,7 +93,7 @@ client.on('message', msg => {
       client.setMaxListeners(1);
     }
    
-    else if (msg.content === 'rnm4') {
+    else if (msg.content === 'RNM4') {
       if (msg.author.id !== '423118623876448296')
       if (msg.author.id !== '301913733536415755')
           return;
@@ -101,6 +101,47 @@ client.on('message', msg => {
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
+     
+     else if (msg.content === 'CDP1') {
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+          return;
+      msg.channel.send('!p https://youtu.be/bvgVYu98A64');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
+    else if (msg.content === 'CDP2') {
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+          return;
+      msg.channel.send('=play https://youtu.be/bvgVYu98A64');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
+    else if (msg.content === 'CDP3') {
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755') 
+           return;
+      msg.channel.send('^^play https://youtu.be/bvgVYu98A64');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+   
+    else if (msg.content === 'CDP4') {
+      if (msg.author.id !== '423118623876448296')
+      if (msg.author.id !== '301913733536415755')
+          return;
+      msg.channel.send('!!!play https://youtu.be/bvgVYu98A64');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
+    
+    
+    
+   //--------------Raccourcis Commandes--------------
     
     else if (msg.content === 'l1') {
       if (msg.author.id !== '423118623876448296')
@@ -215,7 +256,7 @@ client.on('message', msg => {
       if (msg.author.id !== '423118623876448296')
       if (msg.author.id !== '301913733536415755') 
           return;
-      msg.channel.send('------------------------------------------------------- \n__**Bot:**__ \n1=Rythm \n2=Ayana \n3=Koya \n4=DabBot \n------------------------------------------------------- \n__**Commandes Bot:**__ \nl=leave \nj=join \ns=skip \n------------------------------------------------------- \n__**Raccourcis Play:**__ \nrnm=piano cover of "For The Damaged - Coda" \n-------------------------------------------------------');
+      msg.channel.send('------------------------------------------------------- \n__**Bot:**__ \n1=Rythm \n2=Ayana \n3=Koya \n4=DabBot \n------------------------------------------------------- \n__**Commandes Bot:**__ \nl=leave \nj=join \ns=skip \n------------------------------------------------------- \n__**Raccourcis Play:**__ \nRNM=piano cover of "For The Damaged - Coda" \nCDP=Intro Casa De Papel "Cecilia Krull - My life is going on" \n-------------------------------------------------------');
       client.setMaxListeners(1);
       client.setMaxListeners(1);
     }
