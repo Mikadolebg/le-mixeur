@@ -38,7 +38,7 @@ client.on('message', msg => {
 
     
   
-    //----------Commandes Fun
+    //----------Commandes Fun--------------
     
     else if (msg.content === 'Asu') {
       if (msg.author.id !== '423118623876448296')
@@ -66,6 +66,7 @@ client.on('message', msg => {
     
     //--------------Raccourcis Music--------------
     
+    //-------Rick and Morty: piano cover of "For The Damaged - Coda"------
     else if (msg.content === 'RNM1') {
       if (msg.author.id !== '423118623876448296')
       if (msg.author.id !== '301913733536415755') 
@@ -102,6 +103,9 @@ client.on('message', msg => {
       client.setMaxListeners(1);
     }
      
+    
+     //----------Intro Casa De Papel "Cecilia Krull - My life is going on"----------
+    
      else if (msg.content === 'CDP1') {
       if (msg.author.id !== '423118623876448296')
       if (msg.author.id !== '301913733536415755') 
