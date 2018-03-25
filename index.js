@@ -33,7 +33,7 @@ client.on('message', msg => {
   if (msg.author.id !== '342376615566770178')
   if (msg.author.id !== '337354503806517249')
    return;
-    msg.reply('Moi même \n*(msg auto)* ');
+    msg.channel.send('Moi même');
   }
 
     
