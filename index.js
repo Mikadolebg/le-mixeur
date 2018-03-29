@@ -22,12 +22,14 @@ client.on('ready', () => {
    client.setMaxListeners(1);
   });
 // création d'une commande (message, reponse)
+//Zelfy=404497208185061376 | if (msg.author.id !== '404497208185061376')
 //Speculoos=423118623876448296
 //Mikado=301913733536415755
 // Asuiky=342376615566770178
 //Drixy=337354503806517249
 client.on('message', msg => {
   if (msg.content === 'Mikado') {
+  if (msg.author.id !== '404497208185061376')
   if (msg.author.id !== '423118623876448296')
   if (msg.author.id !== '301913733536415755')
   if (msg.author.id !== '342376615566770178')
@@ -41,6 +43,7 @@ client.on('message', msg => {
     //----------Commandes Fun--------------
     
     else if (msg.content === 'Asu') {
+      if (msg.author.id !== '404497208185061376')
       if (msg.author.id !== '423118623876448296')
       if (msg.author.id !== '301913733536415755')
       if (msg.author.id !== '342376615566770178')
@@ -52,6 +55,7 @@ client.on('message', msg => {
     }
     
     else if (msg.content === 'patatoes cycle') {
+      if (msg.author.id !== '404497208185061376')
       if (msg.author.id !== '423118623876448296')
       if (msg.author.id !== '301913733536415755')
       if (msg.author.id !== '342376615566770178')
