@@ -42,6 +42,16 @@ client.on('message', msg => {
   
     //----------Commandes Fun--------------
     
+    else if (msg.content === 'Marco') {
+      if (msg.author.id !== '301913733536415755')
+      if (msg.author.id !== '404497208185061376')
+      if (msg.author.id !== '423118623876448296')
+       return;
+      msg.channel.send('marcomomoyugiohrobert');
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
     else if (msg.content === 'Asu') {
       if (msg.author.id !== '404497208185061376')
       if (msg.author.id !== '423118623876448296')
