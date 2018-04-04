@@ -42,6 +42,12 @@ client.on('message', msg => {
   
     //----------Commandes Fun--------------
     
+    else if (msg.content === 'jo') {
+      msg.channel.send("pi");
+      client.setMaxListeners(1);
+      client.setMaxListeners(1);
+    }
+    
     else if (msg.content === 'Marco') {
       if (msg.author.id !== '301913733536415755')
       if (msg.author.id !== '404497208185061376')
