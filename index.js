@@ -27,7 +27,7 @@ client.on('ready', () => {
 //Mikado=301913733536415755
 // Asuiky=342376615566770178
 //Drixy=337354503806517249
-//Clem=433641076134379520 | if (msg.author.id !== '433641076134379520')
+//Clem=332474080131284993 | if (msg.author.id !== '332474080131284993')
 client.on('message', msg => {
   if (msg.content === 'Mikado') {
   if (msg.author.id !== '404497208185061376')
@@ -48,7 +48,7 @@ client.on('message', msg => {
     }
     
     else if (msg.content === 'Sale') {
-      if (msg.author.id !== '433641076134379520')
+      if (msg.author.id !== '332474080131284993')
           return;
       msg.reply("Comme Antho");
       client.setMaxListeners(1);
@@ -56,7 +56,7 @@ client.on('message', msg => {
     }
     
     else if (msg.content === 'sale') {
-      if (msg.author.id !== '433641076134379520')
+      if (msg.author.id !== '332474080131284993')
         return;
       msg.channel.send("Comme Antho");
       client.setMaxListeners(1);
