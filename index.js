@@ -18,7 +18,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
    console.log(`(1) Logged in as ${client.user.tag}!`);
-   client.user.setGame('vec le feu');
+   client.user.setGame('Sous-Populasse Sans Role Simulator');
    client.setMaxListeners(1);
   });
 // création d'une commande (message, reponse)
