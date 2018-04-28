@@ -1,4 +1,4 @@
-/ on off
+// on off
 // var
 const restify = require("restify");
 var server = restify.createServer();
@@ -22,14 +22,18 @@ client.on('ready', () => {
    client.setMaxListeners(1);
   });
 // création d'une commande (message, reponse)
-//Zelfy=404497208185061376 | if (msg.author.id !== '404497208185061376')
-//Speculoos=423118623876448296
-//Mikado=301913733536415755
-//msg.author.id !== '332474080131284993')
+
 client.on('message', msg => {
-    if (msg.content === 'l6786') {
-    msg.channel.send('Moi même');
-  }
+  if (msg.content === 'ping32456') {
+    msg.channel.send('Pong');
+  }   
+});
+    
+    client.on('guildMemberAdd', member => {
+    console.log('Membre ' + member.user.username + " a rejoind le serveur")
+    member.guild.channels.find("id", "438731113561587724").send( member.user.toString() + ", Bienvenue Dans l'Ecole :wink: !");
+    var role = member.guild.roles.find('name', 'Eleve');
+    member.addRole(role);
     
 });
 
