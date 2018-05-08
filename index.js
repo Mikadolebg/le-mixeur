@@ -27,7 +27,7 @@ bot.on('message', function(message) {
 
 
  
-  else if(message.content.startsWith('!say')) {
+  else if(message.content.startsWith('!say2')) {
        if (message.author.id !== '423118623876448296')
        if (message.author.id !== '301913733536415755')
 	      return;
@@ -37,6 +37,16 @@ bot.on('message', function(message) {
 	.setColor("RANDOM")
 	.setDescription(args.join(" "))
 	message.channel.send(embed)
+
+	}
+	
+  else if(message.content.startsWith('!say3')) {
+       if (message.author.id !== '423118623876448296')
+       if (message.author.id !== '301913733536415755')
+	      return;
+	let args = message.content.split(" ").slice(1);
+	message.delete()
+	message.channel.send(args.join(" "))
 
 	}
    
