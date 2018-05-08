@@ -26,15 +26,6 @@ bot.on('message', function(message) {
 	
      }
    
-   else if(message.content.startsWith('!say2')) {
-       if (message.author.id !== '423118623876448296')
-       if (message.author.id !== '301913733536415755')
-	      return;
-	let args = message.content.split(" ").slice(1);
-	message.channel.send(args.join(" "))
-	
-       }
-   
 });
     
     bot.on('guildMemberAdd', member => {
