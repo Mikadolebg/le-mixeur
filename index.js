@@ -14,18 +14,6 @@ bot.on('ready', () => {
 bot.on('message', function(message) { 	
     Google.parse(message)	
    
-   else if(message.content.startsWith('!say')) {
-       if (message.author.id !== '423118623876448296')
-       if (message.author.id !== '301913733536415755')
-	      return;
-	let args = message.content.split(" ").slice(1);
-	var embed = new Discord.RichEmbed()
-	.setColor("RANDOM")
-	.setDescription(args.join(" "))
-	message.channel.send(embed)
-	
-     }
-   
 });
     
     bot.on('guildMemberAdd', member => {
