@@ -13,6 +13,16 @@ client.on('ready', () => {
 
 bot.on('message', function(message) { 	
     Google.parse(message)	
+    
+   if (message.content === '!help') {
+	if (message.author.id !== '423118623876448296')
+        if (message.author.id !== '301913733536415755')
+	       return;
+		var embed = new Discord.RichEmbed()
+	        .setColor("RANDOM")
+		.setDescription("Commande indisponible pour le moment. Le bot est encore en developpement.")
+    		message.channel.send(embed)
+	}
 });
     
     bot.on('guildMemberAdd', member => {
