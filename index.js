@@ -14,6 +14,32 @@ bot.on('ready', () => {
 bot.on('message', function(message) { 	
     Google.parse(message)	
    
+   if (message.content === '!help') {
+	if (message.author.id !== '423118623876448296')
+        if (message.author.id !== '301913733536415755')
+	       return;
+		var embed = new Discord.RichEmbed()
+	        .setColor("RANDOM")
+		.setDescription("Commande indisponible pour le moment. Le bot est encore en developpement.")
+    		message.channel.send(embed)
+	}
+
+
+
+ 
+  else if(message.content.startsWith('!say')) {
+       if (message.author.id !== '423118623876448296')
+       if (message.author.id !== '301913733536415755')
+	      return;
+	let args = message.content.split(" ").slice(1);
+	message.delete()
+	var embed = new Discord.RichEmbed()
+	.setColor("RANDOM")
+	.setDescription(args.join(" "))
+	message.channel.send(embed)
+
+	}
+   
 });
     
     bot.on('guildMemberAdd', member => {
