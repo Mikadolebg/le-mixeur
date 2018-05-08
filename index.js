@@ -46,7 +46,7 @@ bot.on('message', function(message) {
 	      return;
 	let args = message.content.split(" ").slice(1);
 	message.delete()
-	message.channel.send(args.join(" "))
+	message.channel.send("args.join(" ")")
 
 	}
    
