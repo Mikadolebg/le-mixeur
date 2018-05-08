@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 const Google = require('./commands/google');
 const moment = require('moment');
 
-client.on('ready', () => {
+bot.on('ready', () => {
    console.log(`(1) Logged in as ${bot.user.tag}!`);
    bot.user.setGame('donner cours de français');
    bot.setMaxListeners(1);
@@ -13,16 +13,7 @@ client.on('ready', () => {
 
 bot.on('message', function(message) { 	
     Google.parse(message)	
-    
-   if (message.content === '!help') {
-	if (message.author.id !== '423118623876448296')
-        if (message.author.id !== '301913733536415755')
-	       return;
-		var embed = new Discord.RichEmbed()
-	        .setColor("RANDOM")
-		.setDescription("Commande indisponible pour le moment. Le bot est encore en developpement.")
-    		message.channel.send(embed)
-	}
+   
 });
     
     bot.on('guildMemberAdd', member => {
