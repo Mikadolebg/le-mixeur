@@ -5,7 +5,7 @@ module.exports = class Help extends Command {
 
 	static match(message) {
   
-  return (message.content === '!help')
+  return message.content.startsWith('!help')
 	}
 
 	static action(message) {
