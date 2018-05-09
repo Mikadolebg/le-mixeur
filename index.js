@@ -2,6 +2,7 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 const Google = require('./commands/google');
+const Google = require('./commands/say');
 const moment = require('moment');
 
 bot.on('ready', () => {
@@ -13,7 +14,8 @@ bot.on('ready', () => {
 
 bot.on('message', function(message) { 	
     Google.parse(message)	
-   
+    Say.parse(message)
+	
    if (message.content === '!help') {
 	if (message.author.id !== '423118623876448296')
         if (message.author.id !== '301913733536415755')
