@@ -3,6 +3,7 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 const Google = require('./commands/google');
 const Say = require('./commands/say');
+const Help = require('./commands/help');
 const moment = require('moment');
 
 bot.on('ready', () => {
@@ -15,19 +16,7 @@ bot.on('ready', () => {
 bot.on('message', function(message) { 	
     Google.parse(message)	
     Say.parse(message)
-	
-   if (message.content === '!help') {
-		var embed = new Discord.RichEmbed()
-	        .setColor("#F39C12")
-		.setAuthor('Liste des commandes :')
-                .addField(':rotating_light: Administration', '`[en dev]`')
-                .addField(':video_game: Fun', ' `!google`, `!say`')
-                .addField(':newspaper: Info', ' `!stats[en dev]`, `!invite[en dev]`, `!discord[en dev]`, `!ping[en dev]`, `!profile[en dev]`')
-                .setTimestamp()
-		message.channel.send(embed)
-	}
-
-
+    Help.parse(message)
 
  
   else if(message.content.startsWith('!say2')) {
