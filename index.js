@@ -21,9 +21,13 @@ bot.on('message', function(message) {
         if (message.author.id !== '301913733536415755')
 	       return;
 		var embed = new Discord.RichEmbed()
-	        .setColor("RANDOM")
-		.setDescription("Commande indisponible pour le moment. Le bot est encore en developpement.")
-    		message.channel.send(embed)
+	        .setColor("#F39C12")
+		.setAuthor('Liste des commandes :')
+                .addField(':rotating_light: Administration', '`[en dev]`')
+                .addField(':video_game: Fun', ' `!google`')
+                .addField(':newspaper: Info', ' `!stats[en dev]`, `!invite[en dev]`, `!discord[en dev]`, `!ping[en dev]`, `!profile[en dev]`')
+                .setTimestamp()
+		message.channel.send(embed)
 	}
 
 
@@ -36,7 +40,7 @@ bot.on('message', function(message) {
 	let args = message.content.split(" ").slice(1);
 	message.delete()
 	var embed = new Discord.RichEmbed()
-	.setColor("RANDOM")
+	.setColor("#F39C12")
 	.setDescription(args.join(" "))
 	message.channel.send(embed)
 
