@@ -17,14 +17,11 @@ bot.on('message', function(message) {
     Say.parse(message)
 	
    if (message.content === '!help') {
-	if (message.author.id !== '423118623876448296')
-        if (message.author.id !== '301913733536415755')
-	       return;
 		var embed = new Discord.RichEmbed()
 	        .setColor("#F39C12")
 		.setAuthor('Liste des commandes :')
                 .addField(':rotating_light: Administration', '`[en dev]`')
-                .addField(':video_game: Fun', ' `!google`')
+                .addField(':video_game: Fun', ' `!google`, `!say`')
                 .addField(':newspaper: Info', ' `!stats[en dev]`, `!invite[en dev]`, `!discord[en dev]`, `!ping[en dev]`, `!profile[en dev]`')
                 .setTimestamp()
 		message.channel.send(embed)
