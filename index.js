@@ -18,7 +18,7 @@ bot.on('message', function(message) {
     Say.parse(message)
    // Help.parse(message)
 	
-if(message.content === '!say2') {
+if(message.content.startsWith('!help')) {
  var embed = new Discord.RichEmbed()
 	        .setColor("#F39C12")
 		.setAuthor('Liste des commandes :')
@@ -29,7 +29,6 @@ if(message.content === '!say2') {
 		message.channel.send(embed)
     
 	     }
-  }
 	
   else if(message.content.startsWith('!say2')) {
        if (message.author.id !== '423118623876448296')
