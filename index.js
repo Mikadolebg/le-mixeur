@@ -2,7 +2,7 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
 const Google = require('./commands/google');
-const Google = require('./commands/say');
+const Say = require('./commands/say');
 const moment = require('moment');
 
 bot.on('ready', () => {
