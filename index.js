@@ -35,7 +35,7 @@ if(message.content.startsWith('!help')) {
     bot.on('guildMemberAdd', member => {
     console.log('Membre ' + member.user.username + " a rejoind le serveur")
     member.guild.channels.find("id", "438695803901706253").send("Bienvenue à toi, tu es actuellement demandeur d'asile et la population risque d'être hostile à ton égard. Il te suffit de t'entretenir avec Monsieur Pêche pour qu'il te donne tes papiers et ainsi devenir citoyen.");
-    var role = member.guild.roles.get('id', '429595217746984972');
+    var role = member.guild.roles.find('name', "DEMANDEUR D'ASILE");
     member.addRole(role);
     
 });
