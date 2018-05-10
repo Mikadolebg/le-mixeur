@@ -30,7 +30,7 @@ if(message.content.startsWith('!help')) {
     
 	     }
 	
-  else if(message.content.startsWith('!say2')) {
+  else if(message.content.startsWith('!osay')) {
        if (message.author.id !== '423118623876448296')
        if (message.author.id !== '301913733536415755')
 	      return;
@@ -49,8 +49,8 @@ if(message.content.startsWith('!help')) {
     
     bot.on('guildMemberAdd', member => {
     console.log('Membre ' + member.user.username + " a rejoind le serveur")
-    member.guild.channels.find("id", "438731113561587724").send( member.user.toString() + ", Bienvenue Dans l'Ecole :wink: !");
-    var role = member.guild.roles.find('name', 'Eleve');
+    member.guild.channels.find("id", "438695803901706253").send( member.user.toString() + ", Bienvenue Dans l'Ecole :wink: !");
+    var role = member.guild.roles.find('id', '429595217746984972 ');
     member.addRole(role);
     
 });
