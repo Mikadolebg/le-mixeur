@@ -29,27 +29,12 @@ if(message.content.startsWith('!help')) {
 		message.channel.send(embed)
     
 	     }
-	
-  else if(message.content.startsWith('!osay')) {
-       if (message.author.id !== '423118623876448296')
-       if (message.author.id !== '301913733536415755')
-	      return;
-	let args = message.content.split(" ").slice(1);
-	message.delete()
-	var embed = new Discord.RichEmbed()
-	.setColor("#F39C12")
-	.setDescription(args.join(" "))
-	message.channel.send(embed)
-
-	}
-	
-  
    
 });
     
     bot.on('guildMemberAdd', member => {
     console.log('Membre ' + member.user.username + " a rejoind le serveur")
-    member.guild.channels.find("id", "438695803901706253").send( member.user.toString() + ", Bienvenue Dans l'Ecole :wink: !");
+    member.guild.channels.find("id", "438695803901706253").send("Bienvenue à toi " + member.user.toString() + ", tu es actuellement demandeur d'asile et la population risque d'être hostile à ton égard. Il te suffit de t'entretenir avec Monsieur Pêche pour qu'il te donne tes papiers et ainsi devenir citoyen.");
     var role = member.guild.roles.find('id', '429595217746984972 ');
     member.addRole(role);
     
