@@ -9,6 +9,7 @@ const Deezer = require('./commands/deezer');
 const Clear = require('./commands/clear');
 const Help = require('./commands/help');
 const Blague = require('./commands/blague');
+const Skribble = require('./commands/skribble');
 //Librairie
 const moment = require('moment');
 
@@ -37,6 +38,8 @@ bot.on('message', function(message) {
     Help.parse(message)
 	
     Blague.parse(message)
+	
+    Skribble.parse(message)
 	
    
 });
