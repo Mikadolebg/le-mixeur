@@ -42,7 +42,7 @@ bot.on('message', function(message) {
     //Skribble.parse(message)
 	
   
-	if (message.content === 'skribble') {
+	if (message.content === prefix + 'skribble') {
 	    message.channel.send('__**Toujours chaud pour un p\'tit skribble !**__ \nhttps://skribbl.io/')
 	
 	}
