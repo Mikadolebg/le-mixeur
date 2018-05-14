@@ -1,9 +1,10 @@
 const Command = require('./command')
+const prefix = '!!'
 
 module.exports = class Youtube extends Command {
 
 	static match(message) {
-		return message.content.startsWith('!ytb')
+		return message.content.startsWith(prefix + 'ytb')
 	
 	}
 
