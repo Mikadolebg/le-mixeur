@@ -8,6 +8,7 @@ const Youtube = require('./commands/youtube');
 const Deezer = require('./commands/deezer');
 const Clear = require('./commands/clear');
 const Help = require('./commands/help');
+const Blague = require('./commands/blague');
 //Librairie
 const moment = require('moment');
 
@@ -34,6 +35,8 @@ bot.on('message', function(message) {
     Clear.parse(message)
 
     Help.parse(message)
+	
+    Blague.parse(message)
 	
    
 });
