@@ -20,17 +20,6 @@ bot.on('message', function(message) {
     Youtube.parse(message)
    // Help.parse(message)
 	
-if(message.content.startsWith('!help')) {
- var embed = new Discord.RichEmbed()
-	        .setColor("#F39C12")
-		.setAuthor('Liste des commandes :')
-                .addField(':rotating_light: Administration', '`[en dev]`')
-                .addField(':video_game: Fun', ' `!google`, `!say`')
-                .addField(':newspaper: Info', ' `!stats[en dev]`, `!invite[en dev]`, `!discord[en dev]`, `!ping[en dev]`, `!profile[en dev]`')
-                .setTimestamp()
-		message.channel.send(embed)
-    
-	     }
    
 });
     
