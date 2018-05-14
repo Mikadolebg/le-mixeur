@@ -43,7 +43,11 @@ bot.on('message', function(message) {
 	
   
 	if (message.content === prefix + 'skribble') {
-	    message.channel.send('__**Toujours chaud pour un p\'tit skribble !**__ \nhttps://skribbl.io/')
+	
+	   var embed = new Discord.RichEmbed()
+	   .setColor("RANDOM")
+	   .setDescription('__**Toujours chaud pour un p\'tit skribble !**__')
+	    message.channel.send(embed + '\nhttps://skribbl.io/')
 	
 	}
 	
