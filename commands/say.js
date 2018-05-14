@@ -1,10 +1,11 @@
 const Discord = require('discord.js')
 const Command = require('./command')
+const prefix = '!!'
 
 module.exports = class Say extends Command {
 
 	static match(message) {
-		return message.content.startsWith('!say')
+		return message.content.startsWith(prefix + 'say')
 	}
 
 	static action(message) {
