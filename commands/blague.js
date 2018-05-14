@@ -12,7 +12,7 @@ module.exports = class Blague extends Command {
 
 	static action(message) {
 
-		let randnum = Math.floor(Math.random() * 10)
+		let randnum = Math.floor(Math.random() * 3)
 
 		if (randnum == 0) {
 
