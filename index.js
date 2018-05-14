@@ -9,7 +9,7 @@ const Deezer = require('./commands/deezer');
 const Clear = require('./commands/clear');
 const Help = require('./commands/help');
 const Blague = require('./commands/blague');
-const Skribble = require('./commands/skribble');
+//const Skribble = require('./commands/skribble');
 //Librairie
 const moment = require('moment');
 
@@ -39,9 +39,14 @@ bot.on('message', function(message) {
 	
     Blague.parse(message)
 	
-    Skribble.parse(message)
+    //Skribble.parse(message)
 	
-   
+  
+	if (message.content === 'skribble') {
+	    message.channel.send('__**Toujours chaud pour un p\'tit skribble !**__ \nhttps://skribbl.io/')
+	
+	}
+	
 });
     
     bot.on('guildMemberAdd', member => {
