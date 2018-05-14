@@ -1,12 +1,14 @@
 
 const Discord = require("discord.js");
 const bot = new Discord.Client();
+//Classes command
 const Google = require('./commands/google');
 const Say = require('./commands/say');
 const Youtube = require('./commands/youtube');
 const Deezer = require('./commands/deezer');
 const Clear = require('./commands/clear');
 const Help = require('./commands/help');
+//Librairie
 const moment = require('moment');
 
 //PREFIX
