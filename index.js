@@ -9,7 +9,7 @@ const Deezer = require('./commands/deezer');
 const Clear = require('./commands/clear');
 const Help = require('./commands/help');
 const Blague = require('./commands/blague');
-//const Skribble = require('./commands/skribble');
+
 //Librairie
 const moment = require('moment');
 
@@ -39,14 +39,12 @@ bot.on('message', function(message) {
 	
     Blague.parse(message)
 	
-    //Skribble.parse(message)
-	
   
-	if (message.content === prefix + 'skribble') {
+	if (message.content === prefix + 'skribbl') {
 	
 	   var embed = new Discord.RichEmbed()
-	   .setColor("#3498DB")
-	   .setDescription('__**Toujours chaud pour un p\'tit skribble !**__')
+	   .setColor("#2980b9")
+	   .setDescription('__**Toujours chaud pour un p\'tit skribbl !**__')
 	    message.channel.send(embed)
 	    message.channel.send('https://skribbl.io/')
 	
