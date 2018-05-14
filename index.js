@@ -9,12 +9,16 @@ const Clear = require('./commands/clear');
 const Help = require('./commands/help');
 const moment = require('moment');
 
+//PREFIX
+const prefix = '!!'
+
+//Etat du bot
 bot.on('ready', () => {
    console.log(`(1) Logged in as ${bot.user.tag}!`);
    bot.user.setGame('préparer une salade de fruits');
    bot.setMaxListeners(1);
   });
-// création d'une commande (message, reponse)
+
 
 bot.on('message', function(message) { 	
     Google.parse(message)	
