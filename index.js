@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 const Google = require('./commands/google');
 const Say = require('./commands/say');
 const Youtube = require('./commands/youtube');
-//const Help = require('./commands/help');
+const Help = require('./commands/help');
 const moment = require('moment');
 
 bot.on('ready', () => {
@@ -18,7 +18,7 @@ bot.on('message', function(message) {
     Google.parse(message)	
     Say.parse(message)
     Youtube.parse(message)
-   // Help.parse(message)
+    Help.parse(message)
 	
    
 });
