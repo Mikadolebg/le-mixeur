@@ -15,7 +15,7 @@ module.exports = class Help extends Command {
 		.setAuthor('Liste des commandes :')
 		.addField(':rotating_light: Administration', '`' + prefix + 'clear' + '`')
                 .addField(':video_game: Fun', '`' + prefix + 'say' + '`' + ', ' + '`' + prefix + 'blague' + '`')
-                .addField(':mag_right: Recherche', '`' + prefix + 'google' + '`' + ', ' + '`' + prefix + 'ytb' + '`' + ', ' + '`' + prefix + 'deezer' + '`')
+                .addField(':mag_right: Recherche', '`' + prefix + 'google' + '`' + ', ' + '`' + prefix + 'youtube' + '`' + ', ' + '`' + prefix + 'deezer' + '`')
                 .addField(':newspaper: Info', '`' + prefix + 'stats[en dev]' + '`' + ', ' + '`' + prefix + 'invite[en dev]' + '`' + ', ' + '`' + prefix + 'discord[en dev]' + '`' + ', ' + '`' + prefix + 'ping[en dev]' + '`' + ', ' + '`' + prefix + 'profile[en dev]' + '`')
                 .setTimestamp()
 		message.channel.send(embed)
