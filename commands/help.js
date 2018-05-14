@@ -14,12 +14,13 @@ module.exports = class Help extends Command {
 	        .setColor("#F39C12")
 		.setAuthor('Liste des commandes :')
 		.addField('Prefix :', '`' + prefix + '`')
-		.addField(':rotating_light: Administration', ' `clear`, `[en dev]`')
-                .addField(':video_game: Fun', ' `say`, `[en dev]`')
-                .addField(':mag_right: Recherche', ' `google`, `ytb`, `deezer`')
+		.addField(':rotating_light: Administration', '`' + prefix + 'say' + '`' + ',')
+                .addField(':video_game: Fun', '`' + prefix + 'say' + '`' + ',' + '`[en dev]`')
+                .addField(':mag_right: Recherche', '`' + prefix + 'google' + '`' + ',' + '`' + prefix + 'ytb' + '`' + ',' + '`' + prefix + 'deezer' + '`' + ',')
                 .addField(':newspaper: Info', ' `stats[en dev]`, `invite[en dev]`, `discord[en dev]`, `ping[en dev]`, `profile[en dev]`')
                 .setTimestamp()
 		message.channel.send(embed)
     
 	     }
   }
+//'`' + prefix + 'say' + '`' + ','
