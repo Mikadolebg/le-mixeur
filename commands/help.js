@@ -13,7 +13,6 @@ module.exports = class Help extends Command {
 		var embed = new Discord.RichEmbed()
 	        .setColor("#F39C12")
 		.setAuthor('Liste des commandes :')
-		.addField('Prefix :', '`' + prefix + '`')
 		.addField(':rotating_light: Administration', '`' + prefix + 'clear' + '`' + ',')
                 .addField(':video_game: Fun', '`' + prefix + 'say' + '`' + ',' + '`[en dev]`')
                 .addField(':mag_right: Recherche', '`' + prefix + 'google' + '`' + ',' + '`' + prefix + 'ytb' + '`' + ',' + '`' + prefix + 'deezer' + '`' + ',')
