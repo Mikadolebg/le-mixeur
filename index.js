@@ -9,6 +9,7 @@ const Deezer = require('./commands/deezer');
 const Clear = require('./commands/clear');
 const Help = require('./commands/help');
 const Blague = require('./commands/blague');
+const Quote = require('./commands/quote');
 
 //Librairie
 const moment = require('moment');
@@ -38,6 +39,8 @@ bot.on('message', function(message) {
     Help.parse(message)
 	
     Blague.parse(message)
+	
+    Quote.parse(message)
 	
   
 	if (message.content === prefix + 'skribbl') {
