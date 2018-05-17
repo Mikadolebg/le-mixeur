@@ -18,7 +18,7 @@ module.exports = class Quote extends Command {
 
 			var embed = new Discord.RichEmbed()
 			.setColor("#AA1923")
-			.setDescription('Citation 1)
+			.setDescription('Citation 1')
                         .setFooter('Citation de X')
 			message.channel.sendEmbed(embed)
 
