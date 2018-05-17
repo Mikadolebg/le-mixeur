@@ -19,7 +19,7 @@ module.exports = class Quote extends Command {
 			var embed = new Discord.RichEmbed()
 			.setColor("#AA1923")
 			.setDescription('Citation 1)
-      .setFooter('Citation de X')
+                        .setFooter('Citation de X')
 			message.channel.sendEmbed(embed)
 
 		} else if(randnum == 1) {
@@ -27,7 +27,7 @@ module.exports = class Quote extends Command {
 			var embed = new Discord.RichEmbed()
 			.setColor("#AA1923")
 			.setDescription('Citation 2')
-      .setFooter('Citation de X')
+                        .setFooter('Citation de X')
 			message.channel.sendEmbed(embed)
 
 		} else if(randnum == 2) {
@@ -35,7 +35,7 @@ module.exports = class Quote extends Command {
 			var embed = new Discord.RichEmbed()
 			.setColor("#AA1923")
 			.setDescription('Citation 3')
-      .setFooter('Citation de X')
+                        .setFooter('Citation de X')
 			message.channel.sendEmbed(embed)
 
 		} 
