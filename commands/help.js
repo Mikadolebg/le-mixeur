@@ -14,7 +14,7 @@ module.exports = class Help extends Command {
 	        .setColor("#F39C12")
 		.setAuthor('Liste des commandes :')
 		.addField(':rotating_light: Administration', '`' + prefix + 'clear' + '`')
-                .addField(':video_game: Fun', '`' + prefix + 'say' + '`' + ', ' + '`' + prefix + 'blague' + '`' + '`' + prefix + 'quote' + '`')
+                .addField(':video_game: Fun', '`' + prefix + 'say' + '`' + ', ' + '`' + prefix + 'blague' + '`' + ', ' + '`' + prefix + 'quote' + '`')
                 .addField(':mag_right: Recherche', '`' + prefix + 'google' + '`' + ', ' + '`' + prefix + 'youtube' + '`' + ', ' + '`' + prefix + 'deezer' + '`')
                 .addField(':newspaper: Info', '`' + prefix + 'stats[en dev]' + '`' + ', ' + '`' + prefix + 'invite[en dev]' + '`' + ', ' + '`' + prefix + 'discord[en dev]' + '`' + ', ' + '`' + prefix + 'ping[en dev]' + '`' + ', ' + '`' + prefix + 'profile[en dev]' + '`')
                 .setTimestamp()
@@ -22,4 +22,4 @@ module.exports = class Help extends Command {
     
 	     }
   }
-//'`' + prefix + 'say' + '`' + ','
+//', ' + '`' + prefix + 'say' + '`'
