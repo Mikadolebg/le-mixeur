@@ -19,7 +19,7 @@ module.exports = class Quote extends Command {
 			var embed = new Discord.RichEmbed()
 			.setColor("#AA1923")
 			.setDescription('《Quand le sage montre du doigt la lune,  l\'idiot regarde le doigt.》')
-                        .setFooter('Citation de **Lao-Tseu**')
+                        .setFooter('Citation de Lao-Tseu')
 			message.channel.sendEmbed(embed)
 
 		} else if(randnum == 1) {
@@ -27,7 +27,7 @@ module.exports = class Quote extends Command {
 			var embed = new Discord.RichEmbed()
 			.setColor("#AA1923")
 			.setDescription('《Lorsque l\'on se cogne la tête contre un pot et que cela sonne creux, se n\'est pas forcément le pot qui est vide.》')
-                        .setFooter('Citation de **Confucius**')
+                        .setFooter('Citation de Confucius')
 			message.channel.sendEmbed(embed)
 
 		} else if(randnum == 2) {
@@ -35,7 +35,7 @@ module.exports = class Quote extends Command {
 			var embed = new Discord.RichEmbed()
 			.setColor("#AA1923")
 			.setDescription('《Un arbre qui tombe fait plus de bruit qu\'une forêt qui pousse》')
-                        .setFooter('Citation de **Abd Al Malik**')
+                        .setFooter('Citation de Abd Al Malik')
 			message.channel.sendEmbed(embed)
 
 		} 
