@@ -18,24 +18,24 @@ module.exports = class Quote extends Command {
 
 			var embed = new Discord.RichEmbed()
 			.setColor("#AA1923")
-			.setDescription('Citation 1')
-                        .setFooter('Citation de X')
+			.setDescription('《Quand le sage montre du doigt la lune,  l\'idiot regarde le doigt.》')
+                        .setFooter('Citation de **Lao-Tseu**')
 			message.channel.sendEmbed(embed)
 
 		} else if(randnum == 1) {
 
 			var embed = new Discord.RichEmbed()
 			.setColor("#AA1923")
-			.setDescription('Citation 2')
-                        .setFooter('Citation de X')
+			.setDescription('《Lorsque l\'on se cogne la tête contre un pot et que cela sonne creux, se n\'est pas forcément le pot qui est vide.》')
+                        .setFooter('Citation de **Confucius**')
 			message.channel.sendEmbed(embed)
 
 		} else if(randnum == 2) {
 
 			var embed = new Discord.RichEmbed()
 			.setColor("#AA1923")
-			.setDescription('Citation 3')
-                        .setFooter('Citation de X')
+			.setDescription('《Un arbre qui tombe fait plus de bruit qu\'une forêt qui pousse》')
+                        .setFooter('Citation de **Abd Al Malik**')
 			message.channel.sendEmbed(embed)
 
 		} 
