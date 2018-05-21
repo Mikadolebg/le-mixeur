@@ -63,5 +63,17 @@ bot.on('message', function(message) {
     
 });
 
+bot.on('message', function(message) {
+if (message.author.bot) return;
+const args = message.content.split(" ");
+let text = args.slice(0).join(" ");
+var embed = new Discord.RichEmbed()
+.setColor("#2980b9")
+.setDescription("Nom: " + message.author.username + "#" + message.author.discriminator + "\n" + "ID: " + message.author.id + "\n" + "Message: " + text)
+.setImage(message.author.imageURL)
+.setThumbnail(message.author.avatarURL)
+if(message.channel.type === 'dm') return bot.channels.get('447993889882767360').sendMessage(embed);
+})
+
 // client secret
   bot.login(process.env.TOKEN);
