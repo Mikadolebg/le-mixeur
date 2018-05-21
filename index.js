@@ -72,7 +72,7 @@ var embed = new Discord.RichEmbed()
 .setDescription("Nom: " + message.author.username + "#" + message.author.discriminator + "\n" + "ID: " + message.author.id + "\n" + "Message: " + text)
 .setImage(message.author.imageURL)
 .setThumbnail(message.author.avatarURL)
-if(message.channel.type === 'dm') return bot.channels.get('447993889882767360').sendMessage(embed);
+if(message.channel.type === 'dm') return bot.channels.get('448227240602238996').sendMessage(embed);
 })
 
 // client secret
