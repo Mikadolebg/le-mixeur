@@ -7,6 +7,7 @@ module.exports = class Skribbl extends Command {
 	static match(message) {
   
   return message.content.startsWith(prefix + 'skribbl')
+	}
 	
 	static action(message) {
 		
