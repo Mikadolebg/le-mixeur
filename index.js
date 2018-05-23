@@ -10,6 +10,7 @@ const Clear = require('./commands/clear');
 const Help = require('./commands/help');
 const Blague = require('./commands/blague');
 const Quote = require('./commands/quote');
+const Pp = require('./commands/pp');
 
 //Librairie
 const moment = require('moment');
@@ -41,6 +42,8 @@ bot.on('message', function(message) {
     Blague.parse(message)
 	
     Quote.parse(message)
+	
+    Pp.parse(message)
 	
   
 	if (message.content === prefix + 'skribbl') {
@@ -75,18 +78,6 @@ var embed = new Discord.RichEmbed()
 if(message.channel.type === 'dm') return bot.channels.get('448227240602238996').sendMessage(embed);
 })
 
-
-bot.on('message', function(message) {
-if (message.content === prefix + 'pp') {
-	
-	   var embed = new Discord.RichEmbed()
-	   .setColor("#2980b9")
-	   .setDescription('Voici ta photo de profile:')
-	   .setImage(message.author.avatarURL)
-	   message.channel.send(embed)
-	   
-	}
-});
 
 // client secret
   bot.login(process.env.TOKEN);
