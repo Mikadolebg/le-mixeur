@@ -11,7 +11,7 @@ const Help = require('./commands/help');
 const Blague = require('./commands/blague');
 const Quote = require('./commands/quote');
 const Avatar = require('./commands/avatar');
-const Skribbl = require('./commands/skribbl');
+//const Skribbl = require('./commands/skribbl');
 
 //Librairie
 const moment = require('moment');
@@ -46,8 +46,18 @@ bot.on('message', function(message) {
 	
     Avatar.parse(message)
 	
-    Skribbl.parse(message)
+    //Skribbl.parse(message)
   
+
+if (message.content === prefix + 'skribbl') {
+	
+	   var embed = new Discord.RichEmbed()
+	   .setColor("#2980b9")
+	   .setDescription('__**Toujours chaud pour un p\'tit skribbl !**__')
+	    message.channel.send(embed)
+	    message.channel.send('https://skribbl.io/')
+	
+	}
 	
 });
     
