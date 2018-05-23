@@ -10,7 +10,7 @@ const Clear = require('./commands/clear');
 const Help = require('./commands/help');
 const Blague = require('./commands/blague');
 const Quote = require('./commands/quote');
-const Pp = require('./commands/pp');
+const Avatar = require('./commands/avatar');
 const Skribbl = require('./commands/skribbl');
 
 //Librairie
@@ -44,7 +44,7 @@ bot.on('message', function(message) {
 	
     Quote.parse(message)
 	
-    Pp.parse(message)
+    Avatar.parse(message)
 	
     Skribbl.parse(message)
   
