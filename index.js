@@ -48,7 +48,7 @@ bot.on('message', function(message) {
 	
     //Skribbl.parse(message)
   
-           if (message.content === prefix + 'pp') {
+           if (message.content === prefix + '1pp') {
 	
 	   var embed = new Discord.RichEmbed()
 	   .setColor("#2980b9")
