@@ -48,7 +48,24 @@ bot.on('message', function(message) {
 	
     //Skribbl.parse(message)
   
+           if (message.content === prefix + 'pp') {
 	
+	   var embed = new Discord.RichEmbed()
+	   .setColor("#2980b9")
+	   .setDescription('Voici ta photo de profile:')
+	   .setImage(message.author.imageURL)
+	   message.channel.send(embed)   
+	}
+		
+		
+	
+           if (message.content === prefix + 'skribbl') {
+	
+	   var embed = new Discord.RichEmbed()
+	   .setColor("#2980b9")
+	   .setDescription('Montre nous tes tallents de Mickelangelo:')
+	   message.channel.send(embed) 
+        }
 });
     
     bot.on('guildMemberAdd', member => {
