@@ -1,10 +1,10 @@
 const Command = require('./command')
 const prefix = '!!'
 
-module.exports = class Youtube extends Command {
+module.exports = class Pp extends Command {
 
 	static match(message) {
-		return (message.content === prefix + 'pp') {
+		return message.content(prefix + 'pp')
 	
        static action(message) {
 		  
