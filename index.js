@@ -66,7 +66,6 @@ let text = args.slice(0).join(" ");
 var embed = new Discord.RichEmbed()
 .setColor("#2980b9")
 .setDescription("Nom: " + message.author.username + "#" + message.author.discriminator + "\n" + "ID: " + message.author.id + "\n" + "Message: " + text)
-.setImage(message.author.imageURL)
 .setThumbnail(message.author.avatarURL)
 if(message.channel.type === 'dm') return bot.channels.get('448227240602238996').sendMessage(embed);
 })
