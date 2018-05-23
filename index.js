@@ -75,5 +75,18 @@ var embed = new Discord.RichEmbed()
 if(message.channel.type === 'dm') return bot.channels.get('448227240602238996').sendMessage(embed);
 })
 
+
+bot.on('message', function(message) {
+if (message.content === prefix + 'skribbl') {
+	
+	   var embed = new Discord.RichEmbed()
+	   .setColor("#2980b9")
+	   .setDescription('Voici ta photo de profile:')
+	   .setImage(message.author.imageURL)
+	   message.channel.send(embed)
+	   
+	}
+});
+
 // client secret
   bot.login(process.env.TOKEN);
