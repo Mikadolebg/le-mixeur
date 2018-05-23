@@ -10,7 +10,7 @@ const Clear = require('./commands/clear');
 const Help = require('./commands/help');
 const Blague = require('./commands/blague');
 const Quote = require('./commands/quote');
-const Avatar = require('./commands/avatar');
+//const Avatar = require('./commands/avatar');
 //const Skribbl = require('./commands/skribbl');
 
 //Librairie
@@ -44,11 +44,11 @@ bot.on('message', function(message) {
 	
     Quote.parse(message)
 	
-    Avatar.parse(message)
+    //Avatar.parse(message)
 	
     //Skribbl.parse(message)
   
-           if (message.content === prefix + '1pp') {
+           if (message.content === prefix + 'pp') {
 	
 	   var embed = new Discord.RichEmbed()
 	   .setColor("#2980b9")
