@@ -48,16 +48,6 @@ bot.on('message', function(message) {
 	
     //Skribbl.parse(message)
   
-
-if (message.content === prefix + 'skribbl') {
-	
-	   var embed = new Discord.RichEmbed()
-	   .setColor("#2980b9")
-	   .setDescription('__**Toujours chaud pour un p\'tit skribbl !**__')
-	    message.channel.send(embed)
-	    message.channel.send('https://skribbl.io/')
-	
-	}
 	
 });
     
