@@ -64,8 +64,8 @@ bot.on('message', function(message) {
 	   var embed = new Discord.RichEmbed()
 	   .setColor("#2980b9")
 	   .setDescription('Montre nous tes tallents de Mickelangelo:')
-	   .setAuthor('Skribbl', 'https://cdn.discordapp.com/avatars/301913733536415755/5de5378b76fc30dfd75cac6d5ccb1b4e.png?size=2048')
-	   message.channel.send(embed) 
+	   .setAuthor('Skribbl', 'https://cdn.discordapp.com/attachments/429671705871515648/448932615513309204/thumbnail.png')
+	   message.channel.send(embed)
         }
 });
     
