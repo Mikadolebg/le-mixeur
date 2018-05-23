@@ -13,7 +13,7 @@ module.exports = class Skribbl extends Command {
 	   var embed = new Discord.RichEmbed()
 	   .setColor("#2980b9")
 	   .setDescription('__**Toujours chaud pour un p\'tit skribbl !**__')
-	    message.channel.send(embed + 'https://skribbl.io/')
+	    message.channel.send(embed)
 
 
 	     }
