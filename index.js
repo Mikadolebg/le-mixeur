@@ -64,7 +64,7 @@ bot.on('message', function(message) {
 	   var embed = new Discord.RichEmbed()
 	   .setColor("#2980b9")
 	   .setDescription('Montre nous tes tallents de Mickelangelo:')
-	   .setLink('https://skribll.io')
+	   .setURL('test', 'https://skribll.io')
 	   message.channel.send(embed) 
         }
 });
