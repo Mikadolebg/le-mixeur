@@ -77,7 +77,7 @@ if(message.channel.type === 'dm') return bot.channels.get('448227240602238996').
 
 
 bot.on('message', function(message) {
-if (message.content === prefix + 'skribbl') {
+if (message.content === prefix + 'pp') {
 	
 	   var embed = new Discord.RichEmbed()
 	   .setColor("#2980b9")
