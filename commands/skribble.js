@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const Command = require('./command')
 const prefix = '!!'
 
-module.exports = class Scribble extends Command {
+module.exports = class Scribbl extends Command {
 
 
 	     }
