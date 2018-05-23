@@ -6,6 +6,7 @@ module.exports = class Avatar extends Command {
 	static match(message) {
 		
 		return message.content.startsWith(prefix + 'pp')
+	}
 	
        static action(message) {
 		  
