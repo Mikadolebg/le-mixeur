@@ -77,17 +77,26 @@ bot.on('message', function(message) {
     
 });
 
-bot.on('message', function(message) {
-if (message.author.bot) return;
-const args = message.content.split(" ");
-let text = args.slice(0).join(" ");
-var embed = new Discord.RichEmbed()
-.setColor("#2980b9")
-.setDescription("Nom: " + message.author.username + "#" + message.author.discriminator + "\n" + "ID: " + message.author.id + "\n" + "Message: " + text)
-.setThumbnail(message.author.avatarURL)
-if(message.channel.type === 'dm') return bot.channels.get('448227240602238996').sendMessage(embed);
-})
 
+//Envoie des message privé dans un channel spécifique
+bot.on('message', function(message) {
+  if (message.author.bot)
+    return;
+  const args = message.content.split(" ");
+  let text = args.slice(0).join(" ");
+
+  if(message.channel.type === 'dm')
+    return bot.channels.get('448227240602238996').send({
+      embed: {
+        color: 2719929,
+        description: `Nom: ${message.author.username}#${message.author.discriminator}\nID: ${message.author.id}\nMessage: ${text}`,
+        thumbnail: {
+          url: message.author.avatarURL
+        }
+      },
+      files: message.attachments.array().map(a => a.url)
+    });
+});
 
 // client secret
   bot.login(process.env.TOKEN);
