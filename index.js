@@ -91,7 +91,7 @@ bot.on('message', function(message) {
 });
 
 
-//Envoie des message privé dans un channel spécifique
+//Envoie des message privé du bot dans un channel spécifique
 bot.on('message', function(message) {
   if (message.author.bot)
     return;
