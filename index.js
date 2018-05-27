@@ -11,6 +11,9 @@ const Help = require('./commands/help');
 const Blague = require('./commands/blague');
 const Quote = require('./commands/quote');
 const Ssay = require('./commands/ssay');
+const Steam = require('./commands/steam');
+const Playgoogle = require('./commands/playgoogle');
+const Soundcloud = require('./commands/Soundcloud');
 
 //const Avatar = require('./commands/avatar');
 //const Skribbl = require('./commands/skribbl');
@@ -47,6 +50,12 @@ bot.on('message', function(message) {
     Quote.parse(message)
 
     Ssay.parse(message)
+	
+    Steam.parse(message)
+	
+    Playgoogle.parse(message)
+	
+    Soundcloud.parse(message)
 	
     //Avatar.parse(message)
 	
