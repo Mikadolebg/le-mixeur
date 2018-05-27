@@ -10,6 +10,8 @@ const Clear = require('./commands/clear');
 const Help = require('./commands/help');
 const Blague = require('./commands/blague');
 const Quote = require('./commands/quote');
+const Ssay = require('./commands/ssay');
+
 //const Avatar = require('./commands/avatar');
 //const Skribbl = require('./commands/skribbl');
 
@@ -43,6 +45,8 @@ bot.on('message', function(message) {
     Blague.parse(message)
 	
     Quote.parse(message)
+
+    Ssay.parse(message)
 	
     //Avatar.parse(message)
 	
