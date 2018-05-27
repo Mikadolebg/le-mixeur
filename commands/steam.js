@@ -11,6 +11,7 @@ module.exports = class Steam extends Command {
 	static action(message) {
 		
 			let args = message.content.split(" ").slice(1);
+		        args.shift()
 			message.channel.send("https://store.steampowered.com/search/?term=" + args.join("+"))
 	}
 }
