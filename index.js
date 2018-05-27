@@ -13,7 +13,7 @@ const Quote = require('./commands/quote');
 const Ssay = require('./commands/ssay');
 const Steam = require('./commands/steam');
 const Playgoogle = require('./commands/playgoogle');
-const Soundcloud = require('./commands/Soundcloud');
+const Soundcloud = require('./commands/soundcloud');
 
 //const Avatar = require('./commands/avatar');
 //const Skribbl = require('./commands/skribbl');
